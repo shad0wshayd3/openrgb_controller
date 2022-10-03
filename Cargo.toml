@@ -1,0 +1,26 @@
+[package]
+name = "openrgb_controller"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.22"
+fern = "0.6.1"
+log = "0.4.17"
+openrgb = "0.1.2"
+
+[dependencies.tokio]
+version = "1.21.2"
+features = [
+    "full",
+]
+
+[dependencies.windows]
+version = "0.42.0"
+features = [
+    "Win32_Foundation",
+    "Win32_System_Power",
+    "Win32_UI_WindowsAndMessaging",
+]
